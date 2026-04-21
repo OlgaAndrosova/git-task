@@ -15,7 +15,11 @@ def multiply(a, b):
     return a * b
 
 def sqrt(x):
-    return math.sqrt(x)
+    # внесены изменения
+    if x < 0:
+        return "Ошибка! Нельзя извлечь квадратный корень из отрицательного числа."
+    else:
+        return math.sqrt(x)
 
 if __name__ == "__main__":
     print("Простой калькулятор запущен.")
